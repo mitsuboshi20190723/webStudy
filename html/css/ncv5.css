@@ -1,0 +1,49 @@
+/*
+ *  2024.11.24
+ *  ncv5.css
+ *  ver.0.9
+ *  Kunihito Mitsuboshi
+ *  license(Apache-2.0) at http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+.wrapper
+{
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+header
+{
+	background: #eeffee;
+}
+
+.container
+{
+	display: flex;
+}
+
+.main
+{
+	background: #ffffee;
+	width: 80%;
+}
+
+.num-list li
+{
+	line-height:2em;
+	border:1px solid #888888;
+	cursor:pointer;
+}
+
+.side
+{
+	background: #eeffff;
+	width: 20%;
+}
+
+footer
+{
+	background: #eeffee;
+}
+
