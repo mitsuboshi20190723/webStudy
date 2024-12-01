@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<!--
+    2024.12.1
+    index4ohsho.html
+    ver.0.3
+    Kunihito Mitsuboshi
+    license(Apache-2.0) at http://www.apache.org/licenses/LICENSE-2.0
+-->
+
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<title>OHSHO</title>
+		<meta name="description" content="王将出陣">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<style>
+#board
+{
+	background-color: #004400;
+}
+td.cell
+{
+	background-color: #00ff00;
+	width: 100px;
+	height: 100px;
+}
+		</style>
+
+		<script>
+function init()
+{
+	let b = document.getElementById("board");
+	for(let i=0; i<5; i++)
+	{
+		let tr = document.createElement("tr");
+		for(let j=0; j<4; j++)
+		{
+			let td = document.createElement("td");
+			td.className = "cell";
+			td.id = "cell" + i + j;
+//			td.onclick = clicked;
+			tr.appendChild(td);
+		}
+		b.appendChild(tr);
+	}
+}
+		</script>
+
+	</head>
+
+	<body onload="init()">
+
+		<h1>　　　王　将　出　陣</h1>
+		<table id="board"></table>
+
+	</body>
+
+</html>
